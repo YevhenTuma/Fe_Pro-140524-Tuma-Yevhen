@@ -25,6 +25,12 @@
 
 
 // let NumberValue = Number(prompt('Введіть число'));
+// if(NumberValue%2 === 0){
+//     console.log('Число парне');
+// }
+// else{
+//     console.log('Число не парне');
+// }
 
 
 
@@ -111,4 +117,44 @@
 // }
 // else if(monthValue===12){
 //     console.log('Зараз зима');
+// }
+
+
+
+
+
+
+
+
+// 7. 
+// Оцінка студента:
+
+// Запитайте у користувача ввести свою оцінку за тест (від 0 до 100).
+// Визначте, яку оцінку отримає студент (A, B, C, D або F) за таких умов:
+// 90-100: A
+// 80-89: B
+// 70-79: C
+// 60-69: D
+// менше 60: F
+
+
+
+// let gradeValue = Number(prompt('Введіть свою оцінку'));
+// if(gradeValue<60){
+//     console.log('Ваша оцінка F');
+// }
+// else if(gradeValue>=60 && gradeValue<=69){
+//     console.log('Ваша оцінка D');
+// }
+// else if(gradeValue>=70 && gradeValue<=79){
+//     console.log('Ваша оцінка C');
+// }
+// else if(gradeValue>=80 && gradeValue<=89){
+//     console.log('Ваша оцінка B');
+// }
+// else if(gradeValue>=90 && gradeValue<=100){
+//     console.log('Ваша оцінка A');
+// }
+// else{
+//     console.log('Error');
 // }
