@@ -119,10 +119,14 @@
 
 // Напишіть функцію, яка приймає будь-яку кількість числових аргументів та обчислює їх середнє значення за допомогою оператора Rest.
 
-// ЩОСЬ ТУТ Я ТРОХИ НЕ ЗРОЗУМІВ З ЦИМ ЗАВДАННЯМ.
-// function valueAverage(...arg){
 
+// function valueAverage(...num) {
+//     let sumAll = num.reduce((sum, current) => sum + current, 0);
+//     let average = sumAll / num.length;
+//     return average;
 // }
+// console.log(valueAverage(98,1,25,78,54)); 
+// console.log(valueAverage(1000,900,800,600,500)); 
 
 
 
