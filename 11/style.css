@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.block_menu_context{
+    padding: 10px 15px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+
+}
+.block_menu_wrap{
+    border: 2px solid green;
+    padding: 10px;
+}
+.block_menu_wrap_text{
+    display: inline-block;
+    background-color: aquamarine;
+    padding: 5px 10px;
+}
+.cont_menu{
+    background-color: darkslategray;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    position: absolute;
+}
+.cont_menu.activ{
+    display: block;
+    top: 0;
+    left: 0;
+}
+.cont_menu_list{
+    margin: 15px 0;
+}
+.cont_menu_list_el_link{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 10px;
+    transition: all 0.5s ease;
+
+}
+.cont_menu_list_el_link:hover{
+    background-color: rgba(255, 255, 255, 0.237);
+    transition: all 0.5s ease;
+}
+
+
+.mause_click{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+.key_up{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 2px solid black;
+    position: absolute;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 50%;
+    border: 3px solid green; 
+    position: relative;
+}
+
+
+
+.hallo_world{
+    width: 400px;
+    height: 400px;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    border: 3px solid bisque;
+    align-items: center;
+}
+
+.new_block_hallo_world{
+    width: 400px;
+    height: 400px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    border: 5px solid black;
+    align-items: center;
+}
+
+
+
+.Block_elements{
+    display: flex;
+    justify-content: center;
+}
+.firstEl{
+    
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+.secondEl{
+    display: none;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    
+}
