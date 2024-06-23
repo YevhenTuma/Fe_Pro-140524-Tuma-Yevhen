@@ -5,33 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="HW_11.js"></script>
 </head>
 <body>
-    <div class="block_menu_context">
-        <div class="block_menu_wrap">
-            <p class="block_menu_wrap_text">
-                Я можу рухатись
-            </p>
-        </div>
-        <nav class="cont_menu">
-            <ul class="cont_menu_list">
-                <li class="cont_menu_list_el">
-                    <a href="#" id="left" class="cont_menu_list_el_link">Буду з ліва</a>
-                </li>
-                <li class="cont_menu_list_el">
-                    <a href="#" id="center" class="cont_menu_list_el_link">Буду по центпу</a>
-                </li>
-                <li class="cont_menu_list_el">
-                    <a href="#" id="right" class="cont_menu_list_el_link">Буду з права</a>
-                </li>
-                <li class="cont_menu_list_el">
-                    <a href="#" id="hide" class="cont_menu_list_el_link">Видалити мене</a>
-                </li>
-            </ul>
-        </nav>
+    <div id="textBlock" class="p-3 border">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi eveniet sint omnis illo corrupti laudantium praesentium, nostrum cum, placeat sapiente laboriosam qui reiciendis asperiores. Earum id accusantium ducimus aliquid aut.
     </div>
+    <div id="contextMenu"  class="dropdown-menu">
+        <button class="dropdown-item" id="centerContent">
+            Align center
+        </button>
+        <button class="dropdown-item" id="rightContent">
+            Align right
+        </button>
+        <button class="dropdown-item" id="leftContent">
+            Align left
+        </button>
+        <button class="dropdown-item bg-danger" id="hideMenu">
+            Hide menu
+        </button>
+    </div>
+
 
     <!-- <div class="key_up">
         <div class="circle ">

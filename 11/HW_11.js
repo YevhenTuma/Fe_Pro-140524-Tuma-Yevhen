@@ -3,45 +3,30 @@ window.onload = function(){
     //                   Завдання 'onContextMenu': 
     // Створіть елемент текстовий блок, на який при правому кліку миші замість звичайного контекстного меню браузера з'являється власне створене контекстне меню. Це меню може містити опції, як-от "вирівняти по центру", "вирівняти по правому центру", "вирівняти по лівому краю", "Приховати елемент".
 
+    let textBlockEl = document.querySelector('#textBlock');
+    let contextMenuEl = document.querySelector('#contextMenu');
 
-
-    // ВИБАЧТЕ ДЕСЬ В МЕНЕ ТУТ ПОМИЛКА НЕ МОЖУ ЗНАЙТИ ДЕ САМЕ.\
+    textBlockEl.addEventListener('contextmenu', function(e){
+        e.preventDefault();
+        contextMenuEl.style.display = 'block';
+        contextMenuEl.style.left = `${e.pageX}px`;
+        contextMenuEl.style.top = `${e.pageY}px`;
+    });
+    document.querySelector('#centerContent').addEventListener('click', function(){
+        textBlockEl.style.textAlign = 'center';
+    });
+    document.querySelector('#rightContent').addEventListener('click', function(){
+        textBlockEl.style.textAlign = 'right';
+    });
+    document.querySelector('#leftContent').addEventListener('click', function(){
+        textBlockEl.style.textAlign = 'left';
+    });
+    document.querySelector('#hideMenu').addEventListener('click', function(){
+        textBlockEl.style.display = 'none';
+    });
 
     
-    // document.addEventListener("keydown", function(e){
-    //     if(e.key.includes('Arrow')){
-    //         e.preventDefault();
-    //     }
-    // });
-
-    // let blockMenu = document.querySelector('.block_menu_context');
-    // let contMenu = document.querySelector('.cont_menu');
-    // let blockMenuText = document.querySelector('.block_menu_wrap_text');
     
-
-    // blockMenu.addEventListener("contextmenu", function(e){
-    //     e.preventDefault();
-    //     contMenu.classList.add("active");
-    //     contMenu.style.cssText = `top: ${e.clientY}px; left: ${e.clientX}px`;
-    //     contMenu.addEventListener("click", function(event){
-    //         if(event.target.id === "left"){
-    //             blockMenuText.style.cssText = 'text-align: left;';
-    //             contMenu.classList.remove("active");
-    //         }
-    //         else if(event.target.id === "center"){
-    //             blockMenuText.style.cssText = 'text-align: center;';
-    //             contMenu.classList.remove("active");
-    //         }
-    //         else if(event.target.id === "right"){
-    //             blockMenuText.style.cssText = 'text-align: right;';
-    //             contMenu.classList.remove("active");
-    //         }
-    //         else{
-    //             blockMenuText.style.cssText = 'display: none;';
-    //             contMenu.classList.remove("active");
-    //         }
-    //     });
-    // });
 
 
 
